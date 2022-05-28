@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Details</title>
+    <style>
+    
+
+        button
+        {
+            border: none;
+            background-color: transparent;
+        }
+        fieldset {
+            /* width: 40%; */
+            width: 545px;
+            /* height: ; */
+            /* margin: 5% 0% 0% 25%; */
+            margin-left: 25%;
+            
+            border: 2px solid black;
+        }
+
+        fieldset input {
+            font-size:small;
+        }
+
+        
+        table
+        
+        {
+            margin: 5% 0% 5% 25%;
+         background-color: red;  
+           height: 1.2cm;  
+           
+        
+        }
+
+       
+    </style>
+</head>
+
+<body>
+    
+  
+    <table CELLSPACING=0>
+        <tr>
+            <th width="189px" style="  background-color:rgb(154, 154, 253) ;" >
+                Step1 : Account  
+            </th>
+
+            <th width="189px" style="  background-color: rgb(189, 184, 184);">
+                Step2 : Personal Details
+            </th>
+
+            <th width="189px" style="  background-color: rgb(189, 184, 184);">
+                Step3 : Your Review
+            </th>
+        </tr>
+    </table>
+    <form id="accountform" action="./step2.html">
+        <fieldset>
+            <legend><b> Account</b></legend>
+            <br>
+            
+            <label for="email"><b> Email Address:</b></label><br>
+            <input type="email" name="email" id="email" required placeholder="Enter email" size="60">
+            <br>
+            <br>
+            <label for="password"><b> Password</b></label>
+            <br>
+            <input type="password" name="password" maxlength="8" required size="60" id="password" placeholder="Enter password">
+            <br><br>
+            <label for="confirmed_password"><b> Confirm Password </b></label>
+            <br>
+            <input type="password" maxlength="8" name="confirmed_password" id="confirmed_password" placeholder="confirm password" required size="60">
+            <br><br>
+            <a href="./index.html"><img width="110px" src="Images/back.png"></a>
+
+            <button><img width="110px" src="./Images/next.png" style="text-decoration: none;"></button>
+        </fieldset>
+
+    </form>
+
+</body>
+
+</html>

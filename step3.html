@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Review</title>
+    <style>
+        
+        
+        fieldset {
+            width: 545px;
+            
+            margin-left: 25%;
+
+            border: 2px solid black;
+        }
+
+
+        
+        table
+        
+        {
+            margin: 5% 0% 5% 25%;
+
+           
+           height: 1.2cm;         
+        }
+
+        
+        button
+        {
+            border: none;
+            background-color: transparent;
+        }
+
+       
+        /* textarea
+        {
+            resize: none;
+        } */
+    </style>
+</head>
+
+<body>
+    
+    <table CELLSPACING=0>
+        <tr>
+            <th width="189px" style=" background-color: rgb(174, 240, 174);" >
+                Step1 : Account  
+            </th>
+
+            <th width="189px" style="       background-color: rgb(174, 240, 174);">
+                Step2 : Personal Details
+            </th>
+
+            <th width="189px" style="   background-color: rgb(154, 154, 253);">
+                Step3 : Your Review
+            </th>
+        </tr>
+    </table>
+    <form action="">
+        <fieldset>
+            <legend>
+                <b> Your Review: </b>
+
+            </legend>
+            <br>
+            <label for="options" ><b> How did you hear about us?</b></label>
+
+            <select required name="options" autofocus id="options">
+                <option  disabled selected>Select your option</option>
+                <option name="newspaper" value="newspaper">From newspaper</option>
+                <option name="tv" value="tv">From Tv ads</option>
+                <option name="yt" value="YouTube">From Youtube ads</option>
+            </select>
+            <br>
+            <br>
+            <label for="yes"><b> Would you visit again</b></label><br>
+
+            <label for="yes">
+                <input required type="radio" name="Review" id="yes">
+                
+                <b> Yes</b>
+            </label>
+            <label for="no">
+                <input required type="radio" name="Review" id="no">
+                
+                <b> No </b>
+            </label>
+            <label for="maybe">
+                <input required type="radio" name="Review" id="maybe">
+               <b> Maybe </b>
+            </label>
+            <br><br>
+            <label for="comments">
+              <b>  Comments </b>
+            </label>
+            <br>
+            <textarea required  name="comments" id="comments" placeholder="Enter your comment here" cols="40" maxlength="500"
+                rows="4"></textarea><br><br>
+            <label for="File"><b> Documents </b></label><br>
+            <input  type="file" required id="File" name="file">
+
+            <br><br>
+            <label for="Sign_up">
+                <input type="checkbox" name="SignUp"  id="Sign_up"><b>Sign me up for email updates</b> 
+            </label>
+            <br>
+            <br>
+            <a href="./step2.html"><img width="110px" src="./Images/back.png" ></a>
+           
+            <button><img width="110px" src="./Images/submit.png" ></a></button>
+
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
